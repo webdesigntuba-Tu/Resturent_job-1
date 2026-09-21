@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Bella | Dish Detail</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">☕ La Bella</a
+        ><button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservation.html">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container py-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="menu.html">Menu</a></li>
+          <li class="breadcrumb-item active">Dish Detail</li>
+        </ol>
+      </nav>
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6">
+          <div class="zoom-box">
+            <img
+              id="zoomImage"
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=80"
+              alt="Italian Pizza"
+            />
+          </div>
+          <p class="text-muted small mt-2">
+            Move the mouse over the image to zoom.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p class="section-title">CHEF'S SPECIAL</p>
+          <h1>Italian Pizza</h1>
+          <h3 class="text-danger">$12.00</h3>
+          <p>
+            Our signature pizza is prepared with fresh dough, tomato sauce,
+            mozzarella cheese and selected toppings.
+          </p>
+          <h6>Ingredients</h6>
+          <p>
+            Flour, tomato, mozzarella, olive oil, herbs and fresh vegetables.
+          </p>
+          <div class="input-group mb-3" style="max-width: 180px">
+            <span class="input-group-text">Qty</span
+            ><input type="number" class="form-control" value="1" min="1" />
+          </div>
+          <a href="reservation.html" class="btn btn-danger">Order Now</a>
+        </div>
+      </div>
+      <section class="py-5">
+        <h3>Dish Details</h3>
+        <p>
+          Freshly baked in our kitchen and served hot. This dish is suitable for
+          a casual lunch, family dinner or special gathering.
+        </p>
+        <h5>Nutrition Information</h5>
+        <table class="table table-bordered">
+          <tr>
+            <th>Calories</th>
+            <td>620 kcal</td>
+          </tr>
+          <tr>
+            <th>Protein</th>
+            <td>24 g</td>
+          </tr>
+          <tr>
+            <th>Carbohydrates</th>
+            <td>72 g</td>
+          </tr>
+          <tr>
+            <th>Fat</th>
+            <td>25 g</td>
+          </tr>
+        </table>
+      </section>
+      <section class="pb-5">
+        <h3>Related Dishes</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card food-card">
+              <img
+                src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top"
+                alt="Pasta"
+              />
+              <div class="card-body">
+                <h5>Creamy Pasta</h5>
+                <a href="menu.html" class="btn btn-outline-danger">View Menu</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card food-card">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58bd?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top"
+                alt="Burger"
+              />
+              <div class="card-body">
+                <h5>Classic Burger</h5>
+                <a href="menu.html" class="btn btn-outline-danger">View Menu</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card food-card">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top"
+                alt="Salad"
+              />
+              <div class="card-body">
+                <h5>Garden Salad</h5>
+                <a href="menu.html" class="btn btn-outline-danger">View Menu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="date-time" id="dateTime"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
