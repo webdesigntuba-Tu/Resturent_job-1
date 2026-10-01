@@ -13,6 +13,7 @@ body{
     height:560px;
     object-fit:cover;
     filter:brightness(.62);
+
 }
 .carousel-caption{
     bottom:20%;
@@ -30,12 +31,12 @@ body{
 }
 .food-card{
     border:0;
-    box-shadow:0 4px 18px rgba(0,0,0,.08);
+    box-shadow:15px 4px 18px rgba(239, 5, 5, 0.08);
     transition:.25s;
 }
 .food-card:hover{
     transform:translateY(-5px);
-    box-shadow:0 8px 25px rgba(0,0,0,.13);
+    box-shadow:20px 8px 25px rgba(43, 43, 42, 0.13);
 }
 .food-card img{
     height:220px;
@@ -94,6 +95,7 @@ body:has(.form-card){
 .zoom-box:hover img{
     transform:scale(1.6);
 }
+/* medium device */
 @media(max-width:768px){
     .carousel-item img{
         height:400px;
@@ -104,4 +106,11 @@ body:has(.form-card){
     .carousel-caption p{
         font-size:.9rem;
     }
+}
+/* small device */
+@media (max-width:667px) {
+    .carousel-item img{
+        height:300px;
+    }
+    
 }

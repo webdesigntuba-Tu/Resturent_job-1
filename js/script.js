@@ -37,6 +37,10 @@ showRealTime();
     });
   }
 
+  // reservation Alert
+  function reservation(){
+    alert("Reserve The Table");
+  }
    // Image zoom effect
 
   if (window.jQuery && document.getElementById("zoomImage")) {
